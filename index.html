@@ -15,15 +15,35 @@
             <nav>
                 <ul class="taskbar">
                     <li><span class="material-symbols-outlined">home</span>Home</li>
-                    <li><span class="material-symbols-outlined">today</span>Today</li>
-                    <li><span class="material-symbols-outlined">date_range</span>This Week</li>
                     <li><span class="material-symbols-outlined">assignment</span>Projects</li>
                 </ul>
-                <div class="add-project"><span class="material-symbols-outlined">add</span>Add Project</div>
+                <div class="projects">
+                    example project
+                </div>
+                <div class="add-project">+ new project</div>
             </nav>
         </div>
-        <div class="main"></div>
+        <div class="main">
+            <h1 class="main-title">Home</h1>
+            <div class="main-content"></div>
+            <div class="main-footer">
+                <div class="add-task">+ new task</div>
+            </div>
+        </div>
     </div>
+    <dialog class="modal" id="modal">
+        <form method="dialog" class="form" onsubmit="">
+            <label for="title"></label>    
+            <input type="text" name="title" id="title" placeholder="Title" required>
+            <label for="author"></label>    
+            <input type="text" name="author" id="author" placeholder="Author" required>
+            <label for="pages"></label>    
+            <input type="number" name="pages" id="pages" placeholder="Pages" required>
+            <label for="read">Have you read the book?</label>
+            <input type="checkbox" name="read" id="read" class="toggle">
+            <button type="submit" class="submit">Add</button>
+        </form>
+      </dialog>
     <script src="main.js"></script>
   </body>
 </html>
