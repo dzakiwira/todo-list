@@ -1,5 +1,5 @@
 export default class Project {
-    constructor (name, desc) {
+    constructor(name, desc) {
         this.name = name;
         this.desc = desc;
         this.taskList = [];
@@ -29,7 +29,7 @@ export default class Project {
         return this.desc;
     }
 
-    gettaskList() {
+    getTaskList() {
         return this.taskList;
     }
 }
