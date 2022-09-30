@@ -14,7 +14,6 @@
         <div class="sidebar">
             <nav>
                 <ul class="taskbar">
-                    <li><span class="material-symbols-outlined">home</span>Home</li>
                     <li><span class="material-symbols-outlined">assignment</span>Projects</li>
                 </ul>
                 <div class="projects"></div>
@@ -23,6 +22,7 @@
         </div>
         <div class="main">
             <h1 class="main-title">Home</h1>
+            <div class="main-desc"></div>
             <div class="main-content"></div>
             <div class="main-footer">
                 <div class="add-task">+ new task</div>
@@ -30,14 +30,14 @@
         </div>
     </div>
     <dialog class="modal" id="project-modal">
-        <form method="dialog" class="form" onsubmit="">
+        <form method="dialog" class="form">
             <label for="project">Project:</label>    
             <input type="text" name="project" id="project" placeholder="Shopping list" required>
             <label for="start">Description:</label>
-            <textarea name="description" cols="50" rows="5"></textarea>
+            <textarea name="description" id="description" cols="50" rows="5"></textarea>
             <div class="action-buttons">
                 <button type="submit" class="submit">add</button>
-                <button class="cancel">cancel</button>
+                <button type="button" class="cancel">cancel</button>
             </div>
         </form>
       </dialog>
