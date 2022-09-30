@@ -9,7 +9,7 @@ export default class Task {
     }
 
     getTaskDesc() {
-        return this.taskDesk;
+        return this.taskDesc;
     }
 
     setDate(date) {
