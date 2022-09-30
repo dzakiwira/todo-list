@@ -17,9 +17,7 @@
                     <li><span class="material-symbols-outlined">home</span>Home</li>
                     <li><span class="material-symbols-outlined">assignment</span>Projects</li>
                 </ul>
-                <div class="projects">
-                    example project
-                </div>
+                <div class="projects"></div>
                 <div class="add-project">+ new project</div>
             </nav>
         </div>
@@ -31,17 +29,16 @@
             </div>
         </div>
     </div>
-    <dialog class="modal" id="modal">
+    <dialog class="modal" id="project-modal">
         <form method="dialog" class="form" onsubmit="">
-            <label for="title"></label>    
-            <input type="text" name="title" id="title" placeholder="Title" required>
-            <label for="author"></label>    
-            <input type="text" name="author" id="author" placeholder="Author" required>
-            <label for="pages"></label>    
-            <input type="number" name="pages" id="pages" placeholder="Pages" required>
-            <label for="read">Have you read the book?</label>
-            <input type="checkbox" name="read" id="read" class="toggle">
-            <button type="submit" class="submit">Add</button>
+            <label for="project">Project:</label>    
+            <input type="text" name="project" id="project" placeholder="Shopping list" required>
+            <label for="start">Description:</label>
+            <textarea name="description" cols="50" rows="5"></textarea>
+            <div class="action-buttons">
+                <button type="submit" class="submit">add</button>
+                <button class="cancel">cancel</button>
+            </div>
         </form>
       </dialog>
     <script src="main.js"></script>
