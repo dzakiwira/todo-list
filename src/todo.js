@@ -13,6 +13,10 @@ export default class Todo {
     getProjects() {
         return this.projects;
     }
+
+    getProject(projectName) {
+        return this.projects.find((project) => project.getName() === projectName)
+    }
     
     deleteProject(projectName) {
         const projectToDel = this.projects.find(project => project.getName() === projectName);
