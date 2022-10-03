@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,7 +22,7 @@
             </nav>
         </div>
         <div class="main">
-            <h1 class="main-title">Home</h1>
+            <h1 class="main-title"></h1>
             <div class="main-desc"></div>
             <div class="main-content"></div>
             <div class="main-footer">
@@ -30,14 +31,26 @@
         </div>
     </div>
     <dialog class="modal" id="project-modal">
-        <form method="dialog" class="form">
+        <form method="dialog" class="project-form">
             <label for="project">Project:</label>    
             <input type="text" name="project" id="project" placeholder="Shopping list" required>
-            <label for="start">Description:</label>
+            <label for="description">Description:</label>
             <textarea name="description" id="description" cols="50" rows="5"></textarea>
             <div class="action-buttons">
-                <button type="submit" class="submit">add</button>
-                <button type="button" class="cancel">cancel</button>
+                <button type="submit" class="submit" value="project">add</button>
+                <button type="button" class="cancel-project" value="project">cancel</button>
+            </div>
+        </form>
+      </dialog>
+    <dialog class="modal" id="task-modal">
+        <form method="dialog" class="task-form">
+            <label for="todo">Todo:</label>    
+            <input type="text" name="todo" id="todo" placeholder="Get Fries" size="50" required>
+            <label for="due-date">Date:</label>
+            <input type="date" id="due-date" name="due-date" value="2022-10-03" min="2022-10-3" max="2025-12-31">
+            <div class="action-buttons">
+                <button type="submit" class="submit" value="task">add</button>
+                <button type="button" class="cancel-task" value="task">cancel</button>
             </div>
         </form>
       </dialog>
