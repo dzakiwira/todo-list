@@ -119,7 +119,6 @@ nav {
 
 .main-desc {
     height: fit-content;
-    border-bottom: solid;
     border-color: var(--text-color);
     padding-bottom: 1em;
 }
@@ -127,9 +126,67 @@ nav {
 .main-content {
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    padding: 2em 1em;
+    padding: 1em 0em;
+}
 
+.task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+    padding-top: .6em;
+    padding-bottom: .6em;
+    padding-left: .5em;
+    padding-right: .5em;
+    border-radius: 5px;
+}
+
+.task:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.left-task,
+.right-task {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: var(--main-bg-colour);
+    height: 1em;
+    width: 1em;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"]:after {
+    font-family: "Material Symbols Outlined";
+    content: '\e876';
+    font-size: 1.7em;
+    display: none;
+    color: var(--main-bg-colour);
+}
+
+input[type="checkbox"]:hover {
+    background-color: var(--secondary-bg-colour);
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(80, 228, 90);
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
+}
+
+.delete-task:hover {
+    color: rgb(228, 80, 80);
 }
 
 .main-footer {
@@ -164,7 +221,8 @@ nav {
     color: var(--text-color);
 }
 
-.form {
+.project-form,
+.task-form {
     display: flex;
     flex-direction: column;
     padding: 1em;
@@ -188,7 +246,8 @@ dialog {
 }
 
 .submit,
-.cancel {
+.cancel-project,
+.cancel-task {
     width: 6em;
     padding: .8em 1em;
     margin: 1em 1em 0em 0em ;
@@ -204,7 +263,8 @@ dialog {
     color: rgb(80, 228, 90);
 }
 
-.cancel:hover {
+.cancel-project:hover,
+.cancel-task:hover {
     cursor: pointer;
     color: rgb(228, 80, 80);
 }
