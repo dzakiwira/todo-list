@@ -2,25 +2,43 @@ import * as Render from './render';
 
 // Modal
 const projectModal = document.querySelector('#project-modal');
-const openModal = document.querySelector('.add-project');
-const closeModal = document.querySelector('.cancel');
-const form = document.querySelector('.form');
+const openProjectModal = document.querySelector('.add-project');
+const closeProjectModal = document.querySelector('.cancel-project');
+const projectForm = document.querySelector('.project-form');
 
-// Main
-const addTask = document.querySelector('.add-task');
+// Modal
+const taskModal = document.querySelector('#task-modal');
+const openTaskModal = document.querySelector('.add-task');
+const closeTaskModal = document.querySelector('.cancel-task');
+const taskForm = document.querySelector('.task-form');
+
 
 // Listeners
-form.addEventListener('submit', () => {
+projectForm.addEventListener('submit', () => {
     Render.getUserProject();
 })
 
-openModal.addEventListener('click', () => {
-    form.reset();
+openProjectModal.addEventListener('click', () => {
+    projectForm.reset();
     projectModal.showModal();
 })
 
-closeModal.addEventListener('click', () => {
-    form.reset();
+closeProjectModal.addEventListener('click', () => {
+    projectForm.reset();
     projectModal.close();
+})
+
+taskForm.addEventListener('submit', () => {
+    Render.getUserTask();
+})
+
+openTaskModal.addEventListener('click', () => {
+    taskForm.reset();
+    taskModal.showModal();
+})
+
+closeTaskModal.addEventListener('click', () => {
+    taskForm.reset();
+    taskModal.close();
 })
 
