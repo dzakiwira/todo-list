@@ -1,35 +1,35 @@
 export default class Project {
-    constructor(name, desc) {
-        this.name = name;
-        this.desc = desc;
-        this.taskList = [];
-    }
+  constructor(name, desc) {
+    this.name = name;
+    this.desc = desc;
+    this.taskList = [];
+  }
 
-    setName(name) {
-        this.name = name;
-    }
+  setName(name) {
+    this.name = name;
+  }
 
-    setDesc(desc) {
-        this.desc = desc;
-    }
+  setDesc(desc) {
+    this.desc = desc;
+  }
 
-    addTask(task) {
-        this.taskList.push(task);
-    }
+  addTask(task) {
+    this.taskList.push(task);
+  }
 
-    deleteTask(delTask) {
-        this.taskList = this.taskList.filter(task => task !== delTask);
-    }
+  deleteTask(delTask) {
+    this.taskList = this.taskList.filter((task) => task !== delTask);
+  }
 
-    getName() {
-        return this.name;
-    }
+  getName() {
+    return this.name;
+  }
 
-    getDesc() {
-        return this.desc;
-    }
+  getDesc() {
+    return this.desc;
+  }
 
-    getTaskList() {
-        return this.taskList;
-    }
+  getTaskList() {
+    return this.taskList;
+  }
 }

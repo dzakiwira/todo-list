@@ -1,7 +1,7 @@
 :root {
-    --main-bg-colour: #252525;
-    --secondary-bg-colour: #1d1d1d;
-    --text-color: #d3d3d3;
+  --main-bg-colour: #252525;
+  --secondary-bg-colour: #1d1d1d;
+  --text-color: #d3d3d3;
 }
 
 *,
@@ -13,258 +13,257 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Ubuntu', sans-serif;
-    background-color: var(--text-color);
-    color: var(--text-color);
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--text-color);
+  color: var(--text-color);
+  height: 100vh;
 }
 
 li {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    padding-bottom: 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding-bottom: 1em;
 }
 
 .window {
-    display: grid;
-    grid-template-columns: 1.1fr 2.9fr;
-    height: 50em;
-    width: 70em;
+  display: grid;
+  grid-template-columns: 1.1fr 2.9fr;
+  height: 50em;
+  width: 70em;
 }
 
 /* --------------Sidebar---------------- */
 .sidebar {
-    background-color: var(--secondary-bg-colour);
-    border-radius: 10px 0 0 10px;
+  background-color: var(--secondary-bg-colour);
+  border-radius: 10px 0 0 10px;
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    padding: 2em 2em 1.5em 2em;
-    list-style: none;
-    font-weight: bold;
-    font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 2em 2em 1.5em 2em;
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
-  'wght' 700,
-  'GRAD' 0,
-  'opsz' 48
+    "FILL" 0,
+    "wght" 700,
+    "GRAD" 0,
+    "opsz" 48;
 }
 
 .projects {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding-top: 2em;
-    font-weight: 100;
-    font-size: medium;
-    /* gap: 1.5em; */
-    border-top: solid;
-    border-color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 2em;
+  font-weight: 100;
+  font-size: medium;
+  /* gap: 1.5em; */
+  border-top: solid;
+  border-color: var(--text-color);
 }
 
 .add-project {
-    display: flex;
-    align-self: flex-end;
-    align-items: center;
-    padding: .5em .5em;
-    font-size: .8em;
-    font-weight: 90;
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  padding: 0.5em 0.5em;
+  font-size: 0.8em;
+  font-weight: 90;
 }
 
 .add-project:hover {
-    background-color: var(--text-color);
-    color: var(--secondary-bg-colour);
-    padding: .5em .5em;
-    border-radius: 5px;
-    transition: .3s;
-    cursor: pointer;
+  background-color: var(--text-color);
+  color: var(--secondary-bg-colour);
+  padding: 0.5em 0.5em;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .project-nav {
-    padding-top: .6em;
-    padding-bottom: .6em;
-    padding-left: .5em;
-    border-radius: 5px;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-left: 0.5em;
+  border-radius: 5px;
 }
 
 .project-nav:hover {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, .1);
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Main styling */
 .main {
-    display: grid;
-    grid-template-rows: .5fr .1fr 2fr .5fr;
-    background-color: var(--main-bg-colour);
-    border-radius: 0 10px 10px 0;
-    padding: 1em 2em 2em 2.5em;
+  display: grid;
+  grid-template-rows: 0.5fr 0.1fr 2fr 0.5fr;
+  background-color: var(--main-bg-colour);
+  border-radius: 0 10px 10px 0;
+  padding: 1em 2em 2em 2.5em;
 }
 
 .main-title {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .main-desc {
-    height: fit-content;
-    border-color: var(--text-color);
-    padding-bottom: 1em;
+  height: fit-content;
+  border-color: var(--text-color);
+  padding-bottom: 1em;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    padding: 1em 0em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0em;
 }
 
 .task {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1em;
-    padding-top: .6em;
-    padding-bottom: .6em;
-    padding-left: .5em;
-    padding-right: .5em;
-    border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 5px;
 }
 
 .task:hover {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, .1);
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .left-task,
 .right-task {
-    display: flex;
-    gap: 1em;
-    align-items: center;
+  display: flex;
+  gap: 1em;
+  align-items: center;
 }
 
 input[type="checkbox"] {
-    appearance: none;
-    background-color: var(--main-bg-colour);
-    height: 1em;
-    width: 1em;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  appearance: none;
+  background-color: var(--main-bg-colour);
+  height: 1em;
+  width: 1em;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 input[type="checkbox"]:after {
-    font-family: "Material Symbols Outlined";
-    content: '\e876';
-    font-size: 1.7em;
-    display: none;
-    color: var(--main-bg-colour);
+  font-family: "Material Symbols Outlined";
+  content: "\e876";
+  font-size: 1.7em;
+  display: none;
+  color: var(--main-bg-colour);
 }
 
 input[type="checkbox"]:hover {
-    background-color: var(--secondary-bg-colour);
+  background-color: var(--secondary-bg-colour);
 }
 
 input[type="checkbox"]:checked {
-    background-color: rgb(80, 228, 90);
+  background-color: rgb(80, 228, 90);
 }
 
 input[type="checkbox"]:checked:after {
-    display: block;
+  display: block;
 }
 
 .delete-task:hover {
-    color: rgb(228, 80, 80);
+  color: rgb(228, 80, 80);
 }
 
 .main-footer {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .add-task {
-    width: fit-content;
-    padding: .5em .5em;
-    font-size: 1em;
+  width: fit-content;
+  padding: 0.5em 0.5em;
+  font-size: 1em;
 }
 
 .add-task:hover {
-    background-color: var(--text-color);
-    color: var(--secondary-bg-colour);
-    padding: .5em .5em;
-    border-radius: 5px;
-    transition: .3s;
-    cursor: pointer;
+  background-color: var(--text-color);
+  color: var(--secondary-bg-colour);
+  padding: 0.5em 0.5em;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
 }
-
 
 /* Modal */
 .modal {
-    padding: 1em;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0 0 1em rgba(0 0 0 / .3);
-    background-color: var(--secondary-bg-colour);
-    color: var(--text-color);
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 1em rgba(0 0 0 / 0.3);
+  background-color: var(--secondary-bg-colour);
+  color: var(--text-color);
 }
 
 .project-form,
 .task-form {
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    gap: .8em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 0.8em;
 }
 
 input,
 textarea {
-    font-weight: bold;
-    border-radius: .5em;
-    border: 1px solid black;
-    padding: 1em;
-    background-color: var(--main-bg-colour);
-    color: var(--text-color);
+  font-weight: bold;
+  border-radius: 0.5em;
+  border: 1px solid black;
+  padding: 1em;
+  background-color: var(--main-bg-colour);
+  color: var(--text-color);
 }
 
 dialog {
-    position: absolute;
-    left: 38%;
-    top: 30%;
+  position: absolute;
+  left: 38%;
+  top: 30%;
 }
 
 .submit,
 .cancel-project,
 .cancel-task {
-    width: 6em;
-    padding: .8em 1em;
-    margin: 1em 1em 0em 0em ;
-    font-size: .8rem;
-    border: 0;
-    background-color: var(--main-bg-colour);
-    color: var(--text-color);
-    border-radius: 5px;
+  width: 6em;
+  padding: 0.8em 1em;
+  margin: 1em 1em 0em 0em;
+  font-size: 0.8rem;
+  border: 0;
+  background-color: var(--main-bg-colour);
+  color: var(--text-color);
+  border-radius: 5px;
 }
 
 .submit:hover {
-    cursor: pointer;
-    color: rgb(80, 228, 90);
+  cursor: pointer;
+  color: rgb(80, 228, 90);
 }
 
 .cancel-project:hover,
 .cancel-task:hover {
-    cursor: pointer;
-    color: rgb(228, 80, 80);
+  cursor: pointer;
+  color: rgb(228, 80, 80);
 }
